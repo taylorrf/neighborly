@@ -67,6 +67,13 @@ GIT
     font-icons-rails (0.0.5)
       sass-rails (>= 3.1.1)
 
+PATH
+  remote: ../initjs
+  specs:
+    initjs (2.0.0)
+      jquery-rails
+      rails (>= 3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -202,6 +209,9 @@ GEM
       nokogiri (~> 1.5)
       ruby-hmac
     formatador (0.2.4)
+    foundation-rails (5.0.3.1)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
     fssm (0.2.10)
     geocoder (1.1.8)
     google-analytics-rails (0.0.4)
@@ -224,9 +234,6 @@ GEM
     inherited_resources (1.4.1)
       has_scope (~> 0.6.0.rc)
       responders (~> 1.0.0.rc)
-    initjs (2.0.0)
-      jquery-rails
-      rails (>= 3.1)
     jasmine-core (1.3.1)
     jasmine-rails (0.4.9)
       jasmine-core (~> 1.3)
@@ -480,8 +487,6 @@ GEM
     weekdays (1.0.2)
     xpath (2.0.0)
       nokogiri (~> 1.3)
-    zurb-foundation (4.3.2)
-      sass (>= 3.2.0)
 
 PLATFORMS
   ruby
@@ -514,6 +519,7 @@ DEPENDENCIES
   fakeweb
   fog (>= 1.3.1)
   font-icons-rails!
+  foundation-rails (~> 5.0.3.1)
   geocoder
   google-analytics-rails
   has_permalink
@@ -522,7 +528,7 @@ DEPENDENCIES
   high_voltage
   httpclient (>= 2.2.5)
   inherited_resources (~> 1.4.1)
-  initjs (~> 2.0.0)
+  initjs (~> 2.0.0)!
   jasmine-rails (~> 0.4.6)
   jquery-rails (~> 3.0.4)
   kaminari
@@ -568,4 +574,3 @@ DEPENDENCIES
   unicorn
   video_info (~> 2.0.2)
   weekdays
-  zurb-foundation (~> 4.3.2)
