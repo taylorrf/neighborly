@@ -1,15 +1,24 @@
 .top-bar
   margin-bottom: 0
 
-  .top-bar-section li a:not(.button)
-    line-height: 88px
+  .top-bar-section
+    li a:not(.button)
+      line-height: 88px
+    li:not(.has-form) a:not(.button)
+      padding: 0 20px
+    li:not(.has-form) .user-actions, .search-box
+      a, a:not(.button)
+        background: none
+    ul.right
+      li a, li:not(.has-form) a:not(.button)
+        padding: 0
+
   ul
     li > a
       font-weight: 400
       text-transform: uppercase
       &:not(.button)
         line-height: 88px
-        padding: 0 20px
       i
         color: $topbar-icon-color
         padding-right: 8px
@@ -44,7 +53,6 @@
         padding: 5px 10px
         border-radius: +emCalc(20px)
         margin: 0 0 20px 20px
-        float: left
         &.un-signed-in
           padding: 5px 15px
         a
@@ -95,6 +103,3 @@
               display: inline
             &:focus
               box-shadow: none
-
-
-
