@@ -138,7 +138,7 @@ gem 'foundation-rails', '~> 5.0.3.1'
 gem 'turbolinks', '~> 2.2.0'
 gem 'nprogress-rails'
 gem 'pjax_rails'
-gem 'initjs', '~> 2.0.0'
+gem 'initjs', '~> 2.1.0'
 
 # FIXME: Not-anymore-on-development
 # Gems that are with 1 or more years on the vacuum
