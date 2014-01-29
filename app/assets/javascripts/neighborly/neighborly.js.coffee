@@ -30,7 +30,7 @@ window.Neighborly =
           twttr.widgets.load()
 
   init: ->
-    $(document).foundation('reveal', {animation: 'fadeAndPop', animationSpeed: 100})
+    $(document).foundation({'reveal': {animation: 'fadeAndPop', animation_speed: 100}})
     $(document).foundation()
     this.flash.init()
     this.backstretch.init()
