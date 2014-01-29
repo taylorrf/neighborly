@@ -51,14 +51,18 @@ label
   abbr
     color: red
 
-form.custom
-  .field_with_hint
-    .custom.dropdown
-      margin-bottom: +emCalc(3px)
-
 .field_with_hint
   input, textarea
     margin-bottom: +emCalc(3px)
   p.hint
     color: $secondary-color
     font-size: 80%
+
+select
+  box-shadow: $input-box-shadow
+  +radius($input-radius)
+  &:hover
+    background-color: darken($input-bg-color, 2%)
+    border-color: $input-border-color
+  &:focus
+    border-color: $input-border-color
