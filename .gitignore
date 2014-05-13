@@ -29,3 +29,6 @@ spec/tmp/
 *.sublime-workspace
 *.dot
 .ruby-version
+
+# Secrets
+.env
